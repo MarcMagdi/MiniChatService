@@ -1,0 +1,38 @@
+<div class="main-content">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header" data-background-color="red">
+            <h4 class="title">Conversations History</h4>
+            <p class="category">Here is a list of your conversations history. Click on any one to continue the conversation</p>
+          </div>
+          <div class="card-content table-responsive">
+            <table class="table">
+              <thead class="text-danger">
+              <tr>
+                <th>Name</th>
+                <th>Last Message Preview</th>
+                <th>Last Message Date</th>
+                <th>Online</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let thread of threads;" (click)="clickRow(thread)" class="table-row">
+                <td *ngIf="thread.userOne.id != userId">{{thread.userOne.username}}</td>
+                <td *ngIf="thread.userTwo.id != userId">{{thread.userTwo.username}}</td>
+                <td>{{thread.preview.Value}}</td>
+                <td>{{thread.preview.date}}</td>
+                <td *ngIf="thread.userOne.id != userId">{{thread.userOne.online}}</td>
+                <td *ngIf="thread.userTwo.id != userId">{{thread.userTwo.online}}</td>
+              </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

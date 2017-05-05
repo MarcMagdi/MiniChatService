@@ -1,0 +1,33 @@
+<div class="main-content">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header" data-background-color="red">
+            <h4 class="title">Registered Users</h4>
+            <p class="category">Here is a list of available users. Click on any one to start a conversation</p>
+          </div>
+          <div class="card-content table-responsive">
+            <table class="table">
+              <thead class="text-danger">
+              <tr>
+                <th>Name</th>
+                <th>Online</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let user of users;" class="table-row" (click)="rowClick(user)">
+                <!--<td>{{user.name}}</td>-->
+                <td>{{user.username}}</td>
+                <td>{{user.online}}</td>
+              </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

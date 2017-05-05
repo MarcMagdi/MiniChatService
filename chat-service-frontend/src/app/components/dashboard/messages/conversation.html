@@ -1,0 +1,39 @@
+<div class="main-content">
+
+  <div class="container-fluid">
+    <div class="row">
+        <div class="chat">
+          <div class="chat-history">
+            <ul class="chat-ul">
+              <li *ngIf="thread">
+                <h2>{{thread.userOne.username}} : {{thread.userTwo.username}}</h2>
+              </li>
+              <li class="clearfix" *ngFor="let message of thread.messages;">
+                <div *ngIf="userId == message.from"><div class="message-data">
+                      <span class="message-data-name"><i class="fa fa-circle you"></i> You</span>
+                    </div>
+                    <div class="message you-message">{{message.Value}}</div>
+                </div>
+
+                <div *ngIf="userId != message.from"><div class="message-data align-right">
+                      <span class="message-data-name">Sender</span> <i class="fa fa-circle me"></i>
+                    </div>
+                    <div class="message me-message float-right">{{message.Value}}</div>
+                </div>
+              </li>
+            </ul>
+
+          </div> <!-- end chat-history -->
+          <div class="alert">
+            <form (ngSubmit)="sendMessage()">
+              <div class="form-group form-black label-floating is-empty">
+              <label class="control-label">Enter your message, press enter to send</label>
+              <input class="form-control" type="text" name="name-register" [(ngModel)]="message">
+              <span class="material-input"></span></div>
+              <input type="submit" style="display: none" />
+            </form>
+          </div>
+        </div> <!-- end chat -->
+        </div>
+  </div>
+</div>

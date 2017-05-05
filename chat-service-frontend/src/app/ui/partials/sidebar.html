@@ -1,0 +1,26 @@
+<div class="logo">
+  <a href="http://www.creative-tim.com" class="simple-text">
+    <div class="logo-img">
+      <img src="../../../assets/img/angular2-logo-red.png"/>
+    </div>
+    Mini Chat Service
+  </a>
+</div>
+<div class="sidebar-wrapper">
+  <div class="nav-container">
+    <ul class="nav">
+      <li routerLink="/" routerLinkActive="active">
+        <a [routerLink]="['/']">
+          <i class="material-icons">dashboard</i>
+          <p>Dashboard</p>
+        </a>
+      </li>
+      <li class="active"  routerLink="/conversations" routerLinkActive="active">
+        <a routerLink="/conversations">
+          <i class="material-icons">message</i>
+          <p>Conversations</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>

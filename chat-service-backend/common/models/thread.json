@@ -1,0 +1,39 @@
+{
+  "name": "Thread",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "messages": {
+      "type": "hasMany",
+      "model": "Message",
+      "foreignKey": ""
+    },
+    "lastMessage": {
+      "type": "hasOne",
+      "model": "Message",
+      "foreignKey": ""
+    },
+    "userOne": {
+      "type": "belongsTo",
+      "model": "UserModel",
+      "foreignKey": "userOne"
+    },
+    "userTwo": {
+      "type": "belongsTo",
+      "model": "UserModel",
+      "foreignKey": "userTwo"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

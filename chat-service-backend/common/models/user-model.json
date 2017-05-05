@@ -1,0 +1,36 @@
+{
+  "name": "UserModel",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "online": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {
+    "sentMessages": {
+      "type": "hasMany",
+      "model": "Message",
+      "foreignKey": "from"
+    },
+    "received": {
+      "type": "hasMany",
+      "model": "Message",
+      "foreignKey": "to"
+    }
+  },
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

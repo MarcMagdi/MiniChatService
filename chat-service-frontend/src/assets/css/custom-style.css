@@ -1,0 +1,22 @@
+.screen-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.user-row {
+  cursor: pointer;
+}
+
+.table-row:hover {
+  background: #f9fbe7;
+  cursor: pointer;
+}

@@ -1,5 +1,5 @@
 # Mini Chat Service
-A web application for a chat system with really simple operations built using Angular 2, loopback and Socket.IO.
+A web application for a chat system with really simple operations built using Angular 2, loopback, Socket.IO and Postgres.
 
 ## Application Features
 ### As a visitor I can:
@@ -40,4 +40,5 @@ To install the project you need nodejs at least 6.5 and npm
 + navigate to chat-service-backend
 + open terminal in current directory
 + type "npm install" without quotes
++ database information need to be edited in /server/datasources.js to match your credentials for the postgres database
 Now it's installed to start the project type in the terminal "node ." and it will be running on "http://localhost:3000"

@@ -12,6 +12,19 @@ A web application for a chat system with really simple operations built using An
 + See online users and offline users
 + Send and receive a message from any user
 + See a history summary of my conversations
-
-##Application Architecture
+## Application Architecture
 ### Angular Front End
+Angular project is structured to be easy extended.
+To install the project you need nodejs at least 6.5 and npm
++ navigate to chat-service-frontend
++ open terminal in current directory
++ type "npm install" without quotes
+Now it's installed to start the project type in the terminal "ng serve"
+
+### Nodejs Back End
+The nodejs project is built using loopback from Strongloop version 3.0
+To install the project you need nodejs at least 6.5 and npm
++ navigate to chat-service-backend
++ open terminal in current directory
++ type "npm install" without quotes
+Now it's installed to start the project type in the terminal "node ."

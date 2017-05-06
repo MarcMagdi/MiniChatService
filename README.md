@@ -19,7 +19,7 @@ To install the project you need nodejs at least 6.5 and npm
 + navigate to chat-service-frontend
 + open terminal in current directory
 + type "npm install" without quotes
-Now it's installed to start the project type in the terminal "ng serve"
+Now it's installed to start the project type in the terminal "ng serve" and it will be running on "http://localhost:4200"
 
 ### Nodejs Back End
 The nodejs project is built using loopback from Strongloop version 3.0
@@ -27,4 +27,4 @@ To install the project you need nodejs at least 6.5 and npm
 + navigate to chat-service-backend
 + open terminal in current directory
 + type "npm install" without quotes
-Now it's installed to start the project type in the terminal "node ."
+Now it's installed to start the project type in the terminal "node ." and it will be running on "http://localhost:3000"

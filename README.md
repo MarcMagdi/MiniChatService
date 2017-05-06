@@ -4,14 +4,27 @@ A web application for a chat system with really simple operations built using An
 ## Application Features
 ### As a visitor I can:
 + register with email, username, full name, password
+
+![REGISTER](/assets/register.png?raw=true)
+
 + login with username and password
+
+![LOGIN](/assets/login.png?raw=true)
 
 ### As a user I can:
 + View all users in the system
 + Get a notification whenever any user get online or offline
 + See online users and offline users
+
+![HOME](/assets/home.png?raw=true)
+
 + Send and receive a message from any user
 + See a history summary of my conversations
+
+![HISTORY](/assets/history.png?raw=true)
+
+![CONVERSATION](/assets/conversation.png?raw=true)
+
 ## Application Architecture
 ### Angular Front End
 Angular project is structured to be easy extended.

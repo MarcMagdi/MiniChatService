@@ -13,7 +13,7 @@ A web application for a chat system with really simple operations built using An
 
 ### As a user I can:
 + View all users in the system
-+ Get a notification whenever any user get online or offline
++ Get a notification whenever any user gets online or offline
 + See online users and offline users
 
 ![HOME](/assets/home.png?raw=true)
